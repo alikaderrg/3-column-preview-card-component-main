@@ -109,21 +109,26 @@ select {
 /*************************************************Media*****************************************************/
 @media (min-width:990px) {
 
-    main {
+    body {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 4rem;
-        padding-left: 10rem;
-        padding-right: 10rem;
-        padding-bottom: 1rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
     }
 
 .column-preview-card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 75vh;
-    width: 90%;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    width: 89%;
 }
 
 .card-container {
@@ -131,6 +136,7 @@ select {
    flex-direction: column;
    justify-content: space-between;
    padding: 2.7rem;
+   gap:4rem;
 }
 
 .sedans-card {
@@ -253,6 +259,6 @@ select {
 }
 
 /*********************************************footer*********************************************************/
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; font-family: var(--font-family-secondary);}
 .attribution a { color: hsl(228, 45%, 44%); }
 /*********************************************footer*********************************************************/
