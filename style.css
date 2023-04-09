@@ -126,9 +126,9 @@ select {
 .column-preview-card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    width: 89%;
+    padding-left: 11rem;
+    padding-right: 11rem;
+    width: 87%;
 }
 
 .card-container {
@@ -136,7 +136,7 @@ select {
    flex-direction: column;
    justify-content: space-between;
    padding: 2.7rem;
-   gap:4rem;
+   gap:3rem;
 }
 
 .sedans-card {
@@ -158,8 +158,16 @@ select {
 }
 
 @media (max-width:990px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     main {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 1rem;
